@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>N Queens Game</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="queen.css">
+    <style>
+       
+    </style>
+</head>
+<body>
+    <h1>N Queens Game</h1>
+    <div class="controls">
+        <label for="queenCount">Select Number of Queens:</label>
+        <select id="queenCount">
+            <option value="4">4 Queens</option>
+            <option value="5">5 Queens</option>
+            <option value="6">6 Queens</option>
+            <option value="7">7 Queens</option>
+            <option value="8" selected>8 Queens</option>
+        </select>
+        <button onclick="startGame()">Start Game</button>
+    </div>
+    <div id="message"></div>
+    <div id="queenCounter">Queens Placed: 0/8</div>
+    <div class="board" id="board"></div>
+    <button onclick="resetBoard()">Reset Game</button>
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+    <script src="queen.js">
+       
+    </script>
+</body>
+</html>
